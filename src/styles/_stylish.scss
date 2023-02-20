@@ -1,0 +1,32 @@
+.stylish {
+  margin-top: 64px;
+  margin-bottom: 50px;
+  background-image: url(../images/stylish-bg.svg);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+
+  .promo {
+    &__title_name-white {
+      color: #FFFFFF;
+    }
+
+    &__title_border-dark {
+      border: 1px solid #FFFFFF;
+    }
+
+    &__title_text-white {
+      color: #FFFFFF;
+    }
+  }
+  .stylish__btn {
+    text-align: center;
+  }
+}
+
+//
+
+@media (max-width: 720px) {
+  .stylish {
+    margin-bottom: 0;
+  }
+}

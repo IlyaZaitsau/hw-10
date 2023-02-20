@@ -1,0 +1,20 @@
+.content__button {
+  height: 58px;
+  margin-top: 42px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  &:hover {
+    border-color: #EC7979;
+    color: #EC7979;
+  }
+}
+
+//
+
+
+@media (max-width: 720px){
+  .content__button {
+    width: 288px;
+  }
+}
+

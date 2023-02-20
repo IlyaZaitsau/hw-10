@@ -1,0 +1,105 @@
+.awesome {
+  .awesome__container {
+    margin: 0 170px;
+    max-width: 1510px;
+
+    .promo {
+      &__title {
+        font-family: 'Raleway', sans-serif;
+        margin-top: 50px;
+      }
+
+      &__title_name {
+        text-align: center;
+        margin: 0;
+        margin-top: 50px;
+        padding: 50px 0 0 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+      }
+
+      &__title_border {
+        width: 170px;
+        border: 1px solid #EC7979;
+        margin: 54px auto 0 auto;
+        padding: 0;
+      }
+
+      &__title_text {
+        text-align: center;
+        margin: 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #86878B;
+        margin-top: 40px;
+        padding: 0;
+      }
+    }
+
+    .card__container {
+      display: flex;
+      gap: 30px;
+      margin-top: 70px;
+
+      .card {
+        &__content {
+          text-align: center;
+        }
+
+        &__content_title {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 33px;
+          margin: 0;
+          padding: 30px 0;
+        }
+
+        &__content_text {
+          font-family: 'Raleway';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          margin: 8px 0 0 0;
+        }
+      }
+    }
+  }
+}
+
+//
+
+@media (max-width: 1024px) {
+  .awesome {
+    .awesome__container {
+      margin: 0 16px;
+      max-width: 1024px;
+    }
+  }
+}
+
+
+@media (max-width: 720px) {
+  .awesome__container {
+    max-width: 720px;
+
+    .promo {
+      &__title {
+        font-family: 'Raleway', sans-serif;
+        margin-top: 50px;
+      }
+
+      &__title_border {
+        padding: 0;
+      }
+    }
+
+    .card__container {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,142 @@
+.contact__container {
+  margin: 0 170px;
+  max-width: 1510px;
+
+  .promo {
+    &__title {
+      font-family: 'Raleway', sans-serif;
+      margin-top: 50px;
+    }
+
+    &__title_name {
+      text-align: center;
+      margin: 0;
+      margin-top: 50px;
+      padding: 50px 0 0 0;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 42px;
+      text-transform: uppercase;
+    }
+
+    &__title_border {
+      width: 170px;
+      border: 1px solid #EC7979;
+      margin: 54px auto 0 auto;
+      padding: 0;
+    }
+
+    &__title_text {
+      text-align: center;
+      margin: 0;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      color: #86878B;
+      margin-top: 40px;
+      padding: 0;
+    }
+  }
+
+  .form__container {
+    margin-top: 85px;
+  }
+
+  .form {
+    display: inline-block;
+    width: 100%;
+    padding: 0.6207rem 1rem;
+    padding-top: 85px;
+    position: relative;
+
+    &__textarea {
+      padding: 0;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #BDBDBD;
+      width: 570px;
+      margin: 4px 0;
+      position: absolute;
+      right: 0px;
+      bottom: 10px;
+      height: 142px;
+    }
+  }
+
+  .data {
+    appearance: none;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    width: 571px;
+    padding: 16px 0;
+    color: #BDBDBD;
+    margin: 4px 0;
+  }
+}
+
+
+//
+
+@media (max-width: 1024px) {
+  .contact {
+    .contact__container {
+
+      .form__container {
+        margin-top: 20px;
+        margin: 0 16px;
+        max-width: 1024px;
+      }
+
+      .form {
+        width: 486px;
+
+        &__textarea {
+          width: 486px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .contact {
+    .contact__container {
+      max-width: 720px;
+      min-width: 320px;
+      margin: 0;
+      .promo {
+        &__title_name {
+          padding: 0;
+        }
+      }
+
+      .form__container {
+        max-width: 720px;
+        min-width: 320px;
+        margin: 0;
+      }
+
+      .form {
+        width: 320px;
+        text-align: center;
+        padding: 0;
+
+        &__textarea {
+          text-align: left;
+          width: 288px;
+          position: static;
+          height: 50px;
+        }
+      }
+
+      .data {
+        display: inline-block;
+        width: 280px;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}

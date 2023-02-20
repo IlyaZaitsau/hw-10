@@ -1,0 +1,21 @@
+.btn__contact {
+  width: 270px;
+  padding: 21px;
+  color: #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  background-color: #EC7979;
+  border: none;
+
+  &:hover {
+    background: #AB4949;
+  }
+
+  &:active {
+    background: #EC7979;
+    box-shadow: inset 0px 0px 10px #AB4949;
+  }
+}
+
+

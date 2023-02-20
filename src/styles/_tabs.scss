@@ -1,0 +1,140 @@
+.section__tabs {
+  .tab__container {
+    max-width: 1510px;
+    margin: 0 170px;
+
+    .tab {
+      &__nav {
+        margin-top: 100px;
+      }
+
+      &__item {
+        display: inline-block;
+        padding: 10px 80px;
+        border-left: 1px solid #000;
+        border-top: 1px solid #000;
+        border-right: 1px solid #000;
+        border-radius: 8px 8px 0 0;
+      }
+
+      &__link {
+        text-decoration: none;
+        color: #000;
+      }
+    }
+  }
+
+  .tab__content {
+    border: 1px solid #C6CBCD;
+    border-radius: 4px;
+
+    &_tab-item {
+      width: 570px;
+      margin: 0 25px 0 95px;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    &_tab-title {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 41px;
+      margin: 50px 0;
+    }
+
+    &_tab-text {
+      padding-bottom: 30px;
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      white-space: pre-line;
+    }
+
+    &_tab-icon {
+      display: inline-block;
+    }
+  }
+}
+
+
+//
+
+@media (max-width: 1024px) {
+  .section__tabs {
+    .tab__container {
+      max-width: 1024px;
+      margin: 0 16px;
+
+      .tab {
+        &__nav {
+          margin-top: 60px;
+        }
+
+        &__item {
+          padding: 8px 30px;
+        }
+      }
+    }
+
+    .tab__content {
+      border: 1px solid #C6CBCD;
+      border-radius: 4px;
+
+      &_tab-item {
+        width: 478px;
+        margin: 0 13px 0 80px;
+      }
+
+      &_tab-title {
+        font-size: 24px;
+      }
+
+      &_tab-text {
+        font-size: 14px;
+      }
+
+      &_tab-icon {
+        width: 398px;
+      }
+
+      &_icon {
+        width: 398px;
+      }
+    }
+  }
+}
+
+
+
+
+
+@media (max-width: 720px) {
+  .section__tabs {
+    .tab__container {
+      max-width: 720px;
+
+      .tab {
+
+        &__item {
+          padding: 4px 24px
+        }
+      }
+    }
+
+    .tab__content {
+      &_tab-item {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      &_tab-icon {
+        display: none;
+      }
+    }
+  }
+}
